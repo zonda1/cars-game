@@ -1,0 +1,135 @@
+.page {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.chosen-car__features {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.cars__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cars__item {
+  flex: 1 1 250px;  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.car {
+  border: 1px solid black;
+}
+
+.car>a {
+  display: flex;
+  height: 100px;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center; 
+}
+
+.car--sport {
+  background-color: red;
+}
+
+.car--military {
+  background-color: green;
+}
+
+.car--civil {
+  background-color: blue;
+}
+
+.opponents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.opponent-car {
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.features__list {
+  flex: 1 0 250px;
+  padding: 0 40px 0;
+}
+
+.features__item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.warning {
+  position: absolute;
+  top: 15px;
+  color: red;
+  margin: 0;
+}
+
+.features__name {
+  margin: 0;
+}
+
+.plus {
+  top:0;
+  position: absolute;
+  right: 0;
+  width:20px;
+  height:20px;
+  background:
+    linear-gradient(#fff,#fff),
+    linear-gradient(#fff,#fff),
+    #000;
+  background-position:center;
+  background-size: 56% 2px,2px 56%; 
+  background-repeat:no-repeat;
+}
+
+.tab {
+  flex: 1 0 500px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+}
+
+thead {
+  flex: 1 1;
+}
+
+tr {
+  display: flex;
+}
+
+th {
+  flex: 1 1;
+  font-size: 15px;
+}
+
+td {
+  flex: 1 1;
+  font-size: 15px;
+  text-align: center;
+}

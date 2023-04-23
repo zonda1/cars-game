@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <h1>Choose you car</h1>
+    <div class="cars">
+      <ul class="cars__list">
+        <li class="cars__item">
+          <div class="car car--civil"><a href="#">Civil car</a></div>
+        </li>
+        <li class="cars__item">
+          <div class="car car--military"><a href="#">Military car</a></div>
+        </li>
+        <li class="cars__item">
+          <div class="car car--sport"><a href="#">Sport car</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="chosen-car">
+      <h2 class="chosen-car__title">Your chosen car: <span></span></h2>
+      <div class="chosen-car__features features">
+        <ul class="features__list">
+          <li class="features__item">
+            <p class="features__name">Fuel:<span>0</span></p>
+            <div class="plus"></div>
+          </li>
+          <li class="features__item">
+            <p class="features__name">Low fuel consumption:<span>0</span></p>
+            <div class="plus"></div>
+          </li>
+          <li class="features__item">
+            <p class="features__name">Durability:<span>0</span></p>
+            <div class="plus"></div>
+          </li>
+          <li class="features__item">
+            <p class="features__name">Speed:<span>0</span></p>
+            <div class="plus"></div>
+          </li>
+        </ul>
+        <fieldset class="tab">
+          <legend>Comparison table</legend>
+          <table id="compareTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Power Reserve</th>
+                <th>Durability</th>
+                <th>Speed</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+    <button id="1">Reset game</button>
+    <button id="2">Compare</button>
+    <button id="3">Find opponents</button>
+    <div>
+      <h2 class="opponents__title">Opponents cars</h2>
+      <div class="opponents"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
